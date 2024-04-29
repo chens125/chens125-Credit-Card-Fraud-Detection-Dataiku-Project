@@ -1,0 +1,132 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": false,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": false,
+    "exportModelEvaluationStores": false,
+    "exportProjectResources": true,
+    "exportLabelingTasks": false,
+    "exportAllInputDatasets": true,
+    "exportAllDatasets": false,
+    "exportAllInputManagedFolders": false,
+    "exportGitRepository": false,
+    "exportInsightsData": false,
+    "useManualPluginsInfo": false,
+    "exportSavedModelsRequiredVersions": false,
+    "exportNotebooksWithOutputs": true,
+    "exportForNewBranch": false,
+    "exportKnowledgeBanks": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedModelEvaluationStores": [],
+    "includedManagedFolders": [],
+    "includedCodeStudios": [],
+    "includedKnowledgeBanks": [],
+    "includedLabelingTasks": [],
+    "shareAllInputDatasets": false,
+    "exportForeignObjectsReferences": true
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "CARDHOLDER_INFO",
+        "type": "Snowflake",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 2543644
+      },
+      {
+        "name": "MERCHANT_INFO",
+        "type": "Snowflake",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 3362672
+      },
+      {
+        "name": "TRANSACTIONS_2021",
+        "type": "Snowflake",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 19141113
+      },
+      {
+        "name": "TRANSACTIONS_2022",
+        "type": "Snowflake",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 5441029
+      },
+      {
+        "name": "top_merchants",
+        "type": "S3",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 5244
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "3yL0JQWo",
+        "name": "Predict authorized_flag (binary)",
+        "size": 23048442
+      }
+    ],
+    "includedManagedFolders": [],
+    "includedModelEvaluationStores": [],
+    "includedCodeStudios": [],
+    "includedKnowledgeBanks": [],
+    "includedLabelingTasks": [],
+    "allAnalysisData": true,
+    "insightsData": false
+  },
+  "originalProjectKey": "SIYUADVANCEDDESIGNER",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "12.6.0",
+  "generatedWithDSSConfVersion": "12600",
+  "foreignObjects": [],
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "2.3.1"
+    },
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "dku-saas",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "code-studio-blocks",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "k8s-metrics-utils",
+      "version": "1.0.0"
+    }
+  ],
+  "exportedWithCodeStudioTemplates": [],
+  "requiredCodeStudioTemplates": [],
+  "requiredConnections": {
+    "sample-data": {
+      "name": "sample-data",
+      "type": "EC2",
+      "isMissing": false
+    },
+    "managed-snowflake": {
+      "name": "managed-snowflake",
+      "type": "Snowflake",
+      "isMissing": false
+    }
+  },
+  "allowedMissingConnections": [],
+  "usedCodeEnvRefs": [],
+  "allowedMissingCodeEnvs": [],
+  "hasPartitionedDataset": false
+}
