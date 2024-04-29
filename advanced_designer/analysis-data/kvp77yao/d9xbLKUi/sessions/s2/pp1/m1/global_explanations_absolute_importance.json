@@ -1,0 +1,18 @@
+{
+    "absoluteImportance": {
+        "card_fico_score": 0.14837785868866485,
+        "signature_provided": 0.17735818170774115,
+        "card_age": 0.14494903574363063,
+        "merchant_subsector_description": 0.6465546829828547,
+        "purchase_amount": 0.08793476616721593,
+        "merchant_state": 0.02894544890769857,
+        "purchase_amount_min": 0.04832197144348016,
+        "purchase_amount_max": 0.0259007218809077,
+        "purchase_amount_avg": 0.036777572360678745,
+        "purchase_amount_sum": 0.10633526080418242,
+        "w2_purchase_amount_min": 0.11011955019513432,
+        "w2_purchase_amount_max": 0.046476692615969,
+        "w2_purchase_amount_avg": 0.06226974864677203,
+        "w2_purchase_amount_sum": 0.10826196041066602
+    }
+}

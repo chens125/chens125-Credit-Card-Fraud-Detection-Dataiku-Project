@@ -1,0 +1,28 @@
+{
+  "assertions": [
+    {
+      "name": "Assertion 1",
+      "filter": {
+        "distinct": false,
+        "enabled": true,
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "merchant_state",
+              "operator": "\u003d\u003d [string]",
+              "col": "authorized_flag_description",
+              "string": "New York",
+              "num": 0.0,
+              "num2": 0.0
+            }
+          ]
+        }
+      },
+      "assertionCondition": {
+        "expectedValidRatio": 0.85,
+        "expectedClass": "1"
+      }
+    }
+  ]
+}

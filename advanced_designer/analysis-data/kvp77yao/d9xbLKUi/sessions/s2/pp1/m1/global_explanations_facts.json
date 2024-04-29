@@ -1,0 +1,22 @@
+{
+    "perClassFacts": {
+        "unique": {
+            "purchase_amount_sum": {
+                "impact": 0.10633526080418242,
+                "rank": 7,
+                "feature": "purchase_amount_sum",
+                "correlation": 0.7753367048792391,
+                "type": "NUMERICAL"
+            },
+            "merchant_state": {
+                "impact": 0.02894544890769857,
+                "rank": 13,
+                "feature": "merchant_state",
+                "positiveCategoricalValue": "New York",
+                "negativeCategoricalValue": "Massachusetts",
+                "infoGain": 0.5107022461725715,
+                "type": "CATEGORICAL"
+            }
+        }
+    }
+}

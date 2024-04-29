@@ -1,0 +1,46 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "sessionName": "session 1 retrain",
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.2,
+  "description": "",
+  "name": "LightGBM (session 1 retrain)",
+  "labels": [
+    {
+      "key": "trainDataset:dataset-name",
+      "value": "TRANSACTIONS_known"
+    },
+    {
+      "key": "testDataset:dataset-name",
+      "value": "TRANSACTIONS_known"
+    },
+    {
+      "key": "evaluationDataset:dataset-name",
+      "value": "TRANSACTIONS_known"
+    },
+    {
+      "key": "model:algorithm",
+      "value": "LIGHTGBM_CLASSIFICATION"
+    },
+    {
+      "key": "model:name",
+      "value": "LightGBM (session 1 retrain)"
+    },
+    {
+      "key": "model:session-name",
+      "value": "session 1 retrain"
+    },
+    {
+      "key": "model:date",
+      "value": "2024-04-26T08:51:40.545+0000"
+    },
+    {
+      "key": "evaluation:date",
+      "value": "2024-04-26T08:51:40.545+0000"
+    }
+  ]
+}

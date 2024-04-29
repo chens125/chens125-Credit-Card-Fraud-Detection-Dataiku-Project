@@ -1,0 +1,32 @@
+{
+    "num_columns": [
+        "card_fico_score",
+        "signature_provided",
+        "card_age",
+        "purchase_amount",
+        "purchase_amount_min",
+        "purchase_amount_max",
+        "purchase_amount_avg",
+        "purchase_amount_sum",
+        "w2_purchase_amount_min",
+        "w2_purchase_amount_max",
+        "w2_purchase_amount_avg",
+        "w2_purchase_amount_sum"
+    ],
+    "num_values": [
+        572.071496544125,
+        0.17409596313733347,
+        45.04744315336071,
+        246.75357407589854,
+        93.52647463187283,
+        627.5032642992829,
+        238.94622248099284,
+        1532.501183511981,
+        100.16904099469375,
+        1312.4230371631645,
+        241.32479644623695,
+        72743.89127241174
+    ],
+    "cat_columns": [],
+    "cat_values": []
+}
