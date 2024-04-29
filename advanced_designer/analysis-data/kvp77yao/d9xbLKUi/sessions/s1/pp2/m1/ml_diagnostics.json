@@ -1,0 +1,9 @@
+{
+    "diagnostics": [
+        {
+            "type": "ML_DIAGNOSTICS_ABNORMAL_PREDICTIONS_DETECTION",
+            "message": "The model almost always predicts the class '1'",
+            "step": "Scoring model"
+        }
+    ]
+}

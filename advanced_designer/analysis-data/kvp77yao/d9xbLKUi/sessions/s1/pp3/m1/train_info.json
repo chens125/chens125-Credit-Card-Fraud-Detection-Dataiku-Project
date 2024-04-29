@@ -1,0 +1,110 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 8,
+    "searchStrategy": "GRID",
+    "importantParams": [
+      {
+        "name": "boosting_type",
+        "vals": [
+          "gbdt"
+        ]
+      },
+      {
+        "name": "n_estimators",
+        "vals": [
+          "75"
+        ]
+      },
+      {
+        "name": "num_leaves",
+        "vals": [
+          "31"
+        ]
+      },
+      {
+        "name": "learning_rate",
+        "vals": [
+          "0.1",
+          "0.2"
+        ]
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "boosting_type",
+        "val": "gbdt"
+      },
+      {
+        "name": "n_estimators",
+        "val": "39"
+      },
+      {
+        "name": "num_leaves",
+        "val": "31"
+      },
+      {
+        "name": "learning_rate",
+        "val": "0.2"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 968
+      },
+      {
+        "name": "Loading test set",
+        "time": 265
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 56
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 169
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 54
+      },
+      {
+        "name": "Hyperparameter searching",
+        "time": 14138
+      },
+      {
+        "name": "Fitting model",
+        "time": 179
+      },
+      {
+        "name": "Saving model",
+        "time": 4
+      },
+      {
+        "name": "Scoring model",
+        "time": 980
+      },
+      {
+        "name": "Preparing explainability",
+        "time": 1261
+      }
+    ]
+  },
+  "startTime": 1671528374138,
+  "endTime": 1671528392218,
+  "preprocessingTime": 1514,
+  "trainingTime": 16566,
+  "hyperparamsSearchTime": 14138,
+  "pythonVersion": "3.6.8"
+}

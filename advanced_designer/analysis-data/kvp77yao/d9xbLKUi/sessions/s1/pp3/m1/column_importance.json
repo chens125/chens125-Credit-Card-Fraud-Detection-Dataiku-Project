@@ -1,0 +1,18 @@
+{
+    "columns": [
+        "card_fico_score",
+        "signature_provided",
+        "card_age",
+        "merchant_subsector_description",
+        "purchase_amount",
+        "merchant_state"
+    ],
+    "importances": [
+        0.08046556326436693,
+        0.11815266978790354,
+        0.09938075591575318,
+        0.5164846577222204,
+        0.13761946503889178,
+        0.04789688827086417
+    ]
+}

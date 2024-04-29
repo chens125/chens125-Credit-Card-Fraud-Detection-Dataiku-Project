@@ -1,0 +1,16 @@
+{
+    "num_columns": [
+        "card_fico_score",
+        "signature_provided",
+        "card_age",
+        "purchase_amount"
+    ],
+    "num_values": [
+        570.6477979550205,
+        0.17483698985019336,
+        45.024154287073074,
+        246.5035439219835
+    ],
+    "cat_columns": [],
+    "cat_values": []
+}
