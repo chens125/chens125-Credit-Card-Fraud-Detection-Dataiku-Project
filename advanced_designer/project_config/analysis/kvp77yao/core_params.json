@@ -1,0 +1,233 @@
+{
+  "inputDatasetSmartName": "TRANSACTIONS_known",
+  "script": {
+    "steps": [
+      {
+        "steps": [
+          {
+            "type": "DateParser",
+            "params": {
+              "outCol": "purchase_date_parsed",
+              "lang": "auto",
+              "timezone_id": "UTC",
+              "formats": [
+                "yyyy-MM-dd HH:mm:ss"
+              ],
+              "appliesTo": "SINGLE_COLUMN",
+              "columns": [
+                "purchase_date"
+              ]
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          },
+          {
+            "type": "DateComponentsExtractor",
+            "params": {
+              "column": "purchase_date_parsed",
+              "outYearColumn": "",
+              "outMonthColumn": "purchase_date_parsed_month",
+              "outDayColumn": "purchase_date_parsed_day",
+              "outDayOfWeekColumn": "purchase_date_dow",
+              "timezone_id": "UTC"
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          },
+          {
+            "type": "CreateColumnWithGREL",
+            "params": {
+              "column": "purchase_weekend",
+              "expression": "if(purchase_date_dow\u003e5,1,0)"
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          },
+          {
+            "type": "DateParser",
+            "params": {
+              "outCol": "card_first_active_month_parsed",
+              "lang": "auto",
+              "timezone_id": "UTC",
+              "formats": [
+                "yyyy-MM"
+              ],
+              "appliesTo": "SINGLE_COLUMN",
+              "columns": [
+                "card_first_active_month"
+              ]
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          },
+          {
+            "type": "DateDifference",
+            "params": {
+              "input1": "card_first_active_month_parsed",
+              "input2": "purchase_date_parsed",
+              "output": "days_active",
+              "outputUnit": "DAYS",
+              "compareTo": "COLUMN",
+              "reverse": false
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          }
+        ],
+        "metaType": "GROUP",
+        "preview": false,
+        "disabled": false,
+        "name": "Date handling",
+        "alwaysShowComment": false
+      },
+      {
+        "type": "GeoDistanceProcessor",
+        "params": {
+          "input1": "merchant_location",
+          "input2": "card_location",
+          "output": "distance_card_merchant",
+          "outputUnit": "KILOMETERS",
+          "compareTo": "COLUMN"
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "transaction_id": 120,
+      "authorized_flag": 128,
+      "authorized_flag_description": 218,
+      "purchase_date": 148,
+      "card_id": 120,
+      "merchant_id": 127,
+      "merchant_category_id": 165,
+      "item_category": 113,
+      "purchase_amount": 134,
+      "signature_provided": 150,
+      "risk": 100,
+      "merchant_subsector_description": 240,
+      "spending_type": 141,
+      "merchant_latitude": 143,
+      "merchant_longitude": 150,
+      "card_first_active_month": 188,
+      "card_reward_program": 158,
+      "card_latitude": 134,
+      "card_longitude": 134,
+      "card_fico_score": 128,
+      "card_age": 100,
+      "merchant_location": 169,
+      "merchant_state": 148,
+      "merchant_state_enName": 173,
+      "card_location": 162,
+      "card_state": 120,
+      "card_state_enName": 169,
+      "purchase_date_parsed": 190,
+      "purchase_date_parsed_year": 203,
+      "purchase_date_parsed_month": 210,
+      "purchase_date_parsed_day": 195,
+      "purchase_date_dow": 143,
+      "card_first_active_month_parsed": 260,
+      "since_card_first_active_month_parsed_days": 300,
+      "days_active": 100,
+      "distance_card_merchant": 180,
+      "is_weekend": 100
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "name": "Quick modeling of authorized_flag on TRANSACTIONS_known",
+  "versionTag": {
+    "versionNumber": 19,
+    "lastModifiedBy": {
+      "login": "sylvain.franco@dataiku.com"
+    },
+    "lastModifiedOn": 1671528300425
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "sylvain.franco@dataiku.com"
+    },
+    "lastModifiedOn": 1671527723809
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

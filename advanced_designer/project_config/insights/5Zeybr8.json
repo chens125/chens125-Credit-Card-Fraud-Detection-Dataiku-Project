@@ -1,0 +1,312 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "sylvain.franco@dataiku.com"
+    },
+    "lastModifiedOn": 1670519143917,
+    "versionNumber": 0
+  },
+  "customFields": {},
+  "dashboardCreationId": "GZnJxNg",
+  "listed": false,
+  "name": "Avg of purchase_amount by spending_type on TRANSACTIONS_joined_prepared",
+  "owner": "sylvain.franco@dataiku.com",
+  "params": {
+    "datasetSmartName": "TRANSACTIONS_joined_prepared",
+    "def": {
+      "animationDimension": [],
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "chartHeight": 200,
+      "colorMeasure": [],
+      "colorOptions": {
+        "ccScaleMode": "NORMAL",
+        "colorPalette": "default",
+        "customColors": {},
+        "customPalette": {
+          "colors": [],
+          "fixedValues": false,
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "values": []
+        },
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5,
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "singleColor": "#2678B1",
+        "transparency": 0.75
+      },
+      "computeMode": "NORMAL",
+      "disableSafetyLimits": false,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "facetDimension": [],
+      "fillOpacity": 0.6,
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "spending_type",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 20,
+          "multiplier": "Auto",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": false,
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Average of purchase_amount, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Average of purchase_amount, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "prefix": "",
+          "sort": {
+            "label": "Average of purchase_amount, descending",
+            "measureIdx": 0,
+            "type": "AGGREGATION"
+          },
+          "suffix": "",
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "colorRules": [],
+          "column": "purchase_amount",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "AVG",
+          "isA": "measure",
+          "labelPosition": "BOTTOM",
+          "multiplier": "Auto",
+          "prefix": "",
+          "showDisplayLabel": true,
+          "suffix": "",
+          "type": "NUMERICAL"
+        }
+      ],
+      "geoLayers": [
+        {
+          "colorOptions": {
+            "ccScaleMode": "NORMAL",
+            "colorPalette": "default",
+            "customColors": {},
+            "customPalette": {
+              "colors": [],
+              "fixedValues": false,
+              "id": "__dku_custom__",
+              "name": "Custom Palette",
+              "values": []
+            },
+            "heatDensityMapIntensity": 0.5,
+            "heatDensityMapRadius": 0.5,
+            "numQuantizeSteps": 5,
+            "paletteMiddleValue": 0.0,
+            "paletteType": "CONTINUOUS",
+            "quantizationMode": "NONE",
+            "singleColor": "#2678B1",
+            "transparency": 0.75
+          },
+          "geometry": [],
+          "uaColor": []
+        }
+      ],
+      "geometry": [],
+      "groupDimension": [],
+      "hexbinNumber": 20,
+      "hexbinRadius": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "includeZero": true,
+      "legendPlacement": "OUTER_RIGHT",
+      "mapGridOptions": {
+        "gridLatDeg": 0.5,
+        "gridLonDeg": 0.5
+      },
+      "mapOptions": {
+        "lockSquareGrid": false,
+        "tilesLayer": "cartodb-positron"
+      },
+      "multiTooltips": false,
+      "name": "Avg of purchase_amount by spending_type",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "pivotDisplayTotals": {
+        "grandTotal": {
+          "column": true,
+          "row": true
+        },
+        "subTotals": {
+          "columns": true,
+          "rows": true
+        }
+      },
+      "pivotMeasureDisplayMode": "ROWS",
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "showInChartLabels": true,
+      "showInChartValues": false,
+      "showLegend": true,
+      "showXAxis": false,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "singleXAxis": true,
+      "sizeMeasure": [],
+      "smoothing": true,
+      "strokeWidth": 1,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAo1JREFUeF7tnDtOw0AURT1QkIaSkoiOjQBCIAQFEvtAKMkO+BXsg45vwU5oEBKipEC0EKOAxC+JM8+5Hj+FQz2+83LPvLn2JCZkor9m+2IjZGFXJPclM53NbN0dLj+rdf+LXlB9UACrnNTqAFjrpzs1ALtDoi0IwFo/3akB2B0SbUEA1vrpTg3A7pBoCwKw1k93agB2h0RbEIC1frpTA7A7JNqCAKz1050agN0h0RYEYK2f7tQA7A6JtiAAa/10pwZgd0i0BQFY66c7NQC7Q6ItCMBaP92pAdgdEm1BANb66U4NwO6QaAsCsNZPd2oAdodEWxCAtX66U5tYwPOd65Uq3H44WLupQrcqzYkF3GxdnoaQzSmNC91wfn+8fqLUrFoLwAaHAezo7UI6+HPl0sF0cJwD3l4fpYPp4LiV+2NU2Qxe6FytdvN8xzzhiAvephp7j/tLT0XD2KINro8DOM/ztmGqqKGvU41tAEdZFTcIwNxFD1wpvS2aDh7SRGX/CYunmywAF+yQAB5uDhns5KiSDqaD4+7y/oyig+lgjiotrcNjEo9JPCZZOqY3lrto7qIHOsBzMF82WDeTjAwmg8lga9uQwWQwGVzQNXwfbNhSyGAymAw2NMzHUDKYDCaDyWDrvjF4PBlMBpPB1l4ig8lgMpgMtu4bZHCfA7y6MnwR8ZusggYjg8lgMpgMJoPHdoAMJoNLLSIymAwmg8ngUptH30WcRXMWzVm0tZfIYDKYDCaDrfsGZ9GcRRvWDGfRnEUblsv30KTvBy+2zmZLVRlx0e3R5kvEsF9DqqrHUy29DzyqHtnvoq0AGJ/GAQCn8bm2WQBcm/VpJgZwGp9rmwXAtVmfZmIAp/G5tlneAb41836hZfreAAAAAElFTkSuQmCC",
+      "tooltipMeasures": [],
+      "type": "grouped_columns",
+      "uaColor": [],
+      "uaShape": [],
+      "uaSize": [],
+      "uaTooltip": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "useLiveProcessingIfAvailable": true,
+      "userEditedName": false,
+      "valuesInChartDisplayOptions": {
+        "displayMode": "VALUES",
+        "displayValues": false
+      },
+      "variant": "normal",
+      "xAxisFormatting": {
+        "axisValuesFormatting": {
+          "numberFormatting": {
+            "multiplier": "Auto",
+            "prefix": "",
+            "suffix": ""
+          }
+        },
+        "customExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "displayAxis": true,
+        "isLogScale": false,
+        "showAxisTitle": true
+      },
+      "xAxisMode": "NORMAL",
+      "xAxisNumberFormattingOptions": {
+        "multiplier": "Auto",
+        "prefix": "",
+        "suffix": ""
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xDimension": [],
+      "xMeasure": [],
+      "yAxesFormatting": [
+        {
+          "axisValuesFormatting": {
+            "numberFormatting": {
+              "multiplier": "Auto",
+              "prefix": "",
+              "suffix": ""
+            }
+          },
+          "customExtent": {
+            "editMode": "AUTO",
+            "manualExtent": [
+              null,
+              null
+            ]
+          },
+          "displayAxis": true,
+          "isLogScale": false,
+          "showAxisTitle": true
+        }
+      ],
+      "yAxisMode": "NORMAL",
+      "yAxisNumberFormattingOptions": {
+        "multiplier": "Auto",
+        "prefix": "",
+        "suffix": ""
+      },
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "yDimension": [],
+      "yMeasure": []
+    },
+    "engineType": "LINO",
+    "maxDataBytes": 157286400,
+    "refreshableSelection": {
+      "_refreshTrigger": 1670519134105,
+      "autoRefreshSample": false,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxReadUncompressedBytes": -1,
+        "maxRecords": 10000,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "FULL",
+        "targetRatio": 0.02,
+        "useMemTable": false,
+        "withinFirstN": -1
+      }
+    }
+  },
+  "tags": [],
+  "type": "chart",
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "sylvain.franco@dataiku.com"
+    },
+    "lastModifiedOn": 1670519143917,
+    "versionNumber": 0
+  }
+}

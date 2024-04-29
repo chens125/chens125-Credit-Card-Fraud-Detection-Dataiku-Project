@@ -1,0 +1,196 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "merchant_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "merchant_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "merchant_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "merchant_name",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "merchant_category_id",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "merchant_turnover",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "merchant_category",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "sum_fraud_transcations",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "merchant_subsector_description",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "merchant_geopoint",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "merchant_state",
+      "type": "string",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "index": 1
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "fraud_transactions_by_merchant_id",
+      "index": 0,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [
+    {
+      "mode": "GREL",
+      "name": "percent_fraud",
+      "expr": "sum_fraud_transcations/merchant_turnover",
+      "type": "double"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "merchant_id",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "merchant_name",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "bigint"
+          },
+          {
+            "name": "merchant_turnover",
+            "type": "double"
+          },
+          {
+            "name": "merchant_category",
+            "type": "bigint"
+          },
+          {
+            "name": "sum_fraud_transcations",
+            "type": "double"
+          },
+          {
+            "name": "merchant_subsector_description",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "merchant_geopoint",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "merchant_state",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "percent_fraud",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "enableAutoCastInJoinConditions": false
+}

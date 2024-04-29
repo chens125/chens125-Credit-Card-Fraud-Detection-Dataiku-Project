@@ -1,0 +1,365 @@
+{
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "executionEngine": "SPARK_SUBMIT",
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "autoModeRepartitionInto": 10,
+        "map": {},
+        "mode": "AUTO"
+      },
+      "skipPrerunValidate": false,
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    }
+  },
+  "joins": [
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "caseInsensitive": false,
+          "column1": {
+            "name": "merchant_id",
+            "table": 0
+          },
+          "column2": {
+            "name": "merchant_id",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxDistance": 0,
+          "maxMatches": 1,
+          "normalizeText": false,
+          "strict": false,
+          "type": "EQ"
+        },
+        {
+          "caseInsensitive": false,
+          "column1": {
+            "name": "merchant_category_id",
+            "table": 0
+          },
+          "column2": {
+            "name": "merchant_category_id",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxDistance": 0,
+          "maxMatches": 1,
+          "normalizeText": false,
+          "strict": false,
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "table1": 0,
+      "table2": 1,
+      "type": "LEFT"
+    },
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "column1": {
+            "name": "card_id",
+            "table": 0
+          },
+          "column2": {
+            "name": "internal_card_mapping",
+            "table": 2
+          },
+          "dateDiffUnit": "SECOND",
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "rightLimit": {},
+      "table1": 0,
+      "table2": 2,
+      "type": "LEFT"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "transaction_id",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "authorized_flag",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "purchase_date",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_id",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "merchant_id",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "merchant_category_id",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "item_category",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "purchase_amount",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "signature_provided",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "merchant_subsector_description",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "merchant_latitude",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "merchant_longitude",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_first_active_month",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_reward_program",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_latitude",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_longitude",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_fico_score",
+            "originalType": "VARCHAR",
+            "type": "string"
+          },
+          {
+            "comment": "",
+            "maxLength": 4194304,
+            "name": "card_age",
+            "originalType": "VARCHAR",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "resolvedSelectedColumns": [],
+  "selectedColumns": [
+    {
+      "name": "transaction_id",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "authorized_flag",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "purchase_date",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "card_id",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "merchant_id",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "merchant_category_id",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "item_category",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "purchase_amount",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "signature_provided",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "subsector_description",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "longitude",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "first_active_month",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "reward_program",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "longitude",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "fico_score",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "table": 2,
+      "type": "string"
+    }
+  ],
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 0,
+      "originLabel": "TRANSACTIONS_stacked",
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 1,
+      "originLabel": "MERCHANT_INFO",
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "prefix": "merchant"
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 2,
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {},
+      "prefix": "card"
+    }
+  ]
+}

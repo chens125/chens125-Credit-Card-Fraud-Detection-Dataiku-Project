@@ -1,0 +1,108 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "sylvain.franco@dataiku.com"
+    },
+    "lastModifiedOn": 1670512107675,
+    "versionNumber": 0
+  },
+  "customFields": {},
+  "listed": true,
+  "name": "Sylvain's full walkthrough's default dashboard",
+  "owner": "sylvain.franco@dataiku.com",
+  "pages": [
+    {
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      },
+      "grid": {
+        "tiles": [
+          {
+            "autoLoad": true,
+            "box": {
+              "height": 3,
+              "left": 0,
+              "top": 0,
+              "width": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "bf0Mxi4",
+            "insightType": "chart",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "showXAxis": true,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT"
+          },
+          {
+            "autoLoad": true,
+            "box": {
+              "height": 3,
+              "left": 6,
+              "top": 0,
+              "width": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "371o685",
+            "insightType": "chart",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "showXAxis": true,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT"
+          },
+          {
+            "autoLoad": true,
+            "box": {
+              "height": 5,
+              "left": 0,
+              "top": 3,
+              "width": 12
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "A5GQYeT",
+            "insightType": "chart",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "showXAxis": true,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT"
+          }
+        ]
+      },
+      "id": "VJ34coM",
+      "showTitle": false
+    }
+  ],
+  "showGrid": true,
+  "tags": [],
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "sylvain.franco@dataiku.com"
+    },
+    "lastModifiedOn": 1670519229244,
+    "versionNumber": 13
+  }
+}

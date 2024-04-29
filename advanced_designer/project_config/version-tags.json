@@ -1,0 +1,172 @@
+{
+  "tags": {
+    "DATASET.TRANSACTIONS_joined_prepared_windows": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714120241742,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_known": {
+      "versionNumber": 3,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714120392322,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_unknown": {
+      "versionNumber": 3,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714120392303,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_unknown_scored": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714120848724,
+      "extendedProperties": {}
+    },
+    "DATASET.Tfraud_transactions_by_merchant_id": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714122005451,
+      "extendedProperties": {}
+    },
+    "DATASET.fraud_transactions_by_merchant_id": {
+      "versionNumber": 3,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714123929094,
+      "extendedProperties": {}
+    },
+    "DATASET.top_merchants": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714122851518,
+      "extendedProperties": {}
+    },
+    "DATASET.top_merchants_joined": {
+      "versionNumber": 3,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124015778,
+      "extendedProperties": {}
+    },
+    "DATASET.top_merchants_joined_topn": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124172370,
+      "extendedProperties": {}
+    },
+    "DATASET.top_merchants_sql": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124258173,
+      "extendedProperties": {}
+    },
+    "PROJECT.SIYUADVANCEDDESIGNER": {
+      "versionNumber": 8,
+      "lastModifiedBy": {
+        "login": "api:XJHUEYK71G9Z8M5F"
+      },
+      "lastModifiedOn": 1714129842603,
+      "extendedProperties": {}
+    },
+    "PROJECT.STARTERADVANCEDDESIGNER": {
+      "versionNumber": 14,
+      "lastModifiedBy": {
+        "login": "devesh.singh@dataiku.com"
+      },
+      "lastModifiedOn": 1714036250321,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_TRANSACTIONS_joined_prepared_windows": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714120252789,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_Tfraud_transactions_by_merchant_id": {
+      "versionNumber": 7,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124967485,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_top_merchants_joined": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124339050,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_top_merchants_joined_topn": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124173824,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_top_merchants_sql": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714124258178,
+      "extendedProperties": {}
+    },
+    "RECIPE.split_TRANSACTIONS_joined_prepared": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714120397958,
+      "extendedProperties": {}
+    },
+    "RECIPE.train_Predict_authorized_flag__binary_": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714121542347,
+      "extendedProperties": {}
+    },
+    "SAVED_MODEL.3yL0JQWo": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714121542326,
+      "extendedProperties": {}
+    },
+    "SCENARIO.RUN_TOP_10_MERCHANTS": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714125619546,
+      "extendedProperties": {}
+    }
+  }
+}

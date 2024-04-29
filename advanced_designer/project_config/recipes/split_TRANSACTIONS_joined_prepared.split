@@ -1,0 +1,302 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": 1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false,
+      "value": ""
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "authorized_flag",
+              "col": "transaction_id",
+              "$showList": false,
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "transaction_id",
+                "comment": "",
+                "type": "bigint",
+                "maxLength": 4194304
+              },
+              {
+                "name": "authorized_flag",
+                "comment": "",
+                "type": "bigint",
+                "maxLength": 4194304
+              },
+              {
+                "name": "authorized_flag_description",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "purchase_date",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "purchase_date_parsed",
+                "type": "date"
+              },
+              {
+                "name": "purchase_date_parsed_month",
+                "type": "bigint"
+              },
+              {
+                "name": "purchase_date_parsed_day",
+                "type": "bigint"
+              },
+              {
+                "name": "purchase_date_dow",
+                "type": "bigint"
+              },
+              {
+                "name": "purchase_weekend",
+                "type": "bigint"
+              },
+              {
+                "name": "card_id",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_id",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_category_id",
+                "comment": "",
+                "type": "bigint",
+                "maxLength": 4194304
+              },
+              {
+                "name": "item_category",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "purchase_amount",
+                "comment": "",
+                "type": "double",
+                "maxLength": 4194304
+              },
+              {
+                "name": "signature_provided",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "risk",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_subsector_description",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "spending_type",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_latitude",
+                "comment": "",
+                "type": "double",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_longitude",
+                "comment": "",
+                "type": "double",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_first_active_month",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_first_active_month_parsed",
+                "type": "date"
+              },
+              {
+                "name": "days_active",
+                "type": "bigint"
+              },
+              {
+                "name": "card_reward_program",
+                "comment": "",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_latitude",
+                "comment": "",
+                "type": "double",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_longitude",
+                "comment": "",
+                "type": "double",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_fico_score",
+                "comment": "",
+                "type": "bigint",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_age",
+                "comment": "",
+                "type": "bigint",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_location",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_state",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_state_enName",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_location",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "distance_card_merchant",
+                "type": "double"
+              },
+              {
+                "name": "card_state",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_state_enName",
+                "type": "string",
+                "maxLength": 4194304
+              }
+            ]
+          }
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}

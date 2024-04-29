@@ -1,0 +1,24 @@
+{
+  "name": "Code Snippets",
+  "layout": "WIKI_ARTICLE",
+  "attachments": [],
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "tim.yap@dataiku.com"
+    },
+    "lastModifiedOn": 1673616575414
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tim.yap@dataiku.com"
+    },
+    "lastModifiedOn": 1673616543416
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
