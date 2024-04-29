@@ -1,0 +1,132 @@
+{
+  "tags": {
+    "DASHBOARD.jfMx7ps": {
+      "versionNumber": 5,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714041469394,
+      "extendedProperties": {}
+    },
+    "DATASET.CARDHOLDER_INFO": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714038829626,
+      "extendedProperties": {}
+    },
+    "DATASET.MERCHANT_INFO": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714038829632,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_2021": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714038829640,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_2022": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714038829693,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_joined": {
+      "versionNumber": 2,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714039250889,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_joined_prepared": {
+      "versionNumber": 3,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714040129678,
+      "extendedProperties": {}
+    },
+    "DATASET.TRANSACTIONS_stacked": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714038920735,
+      "extendedProperties": {}
+    },
+    "INSIGHT.80zbtn8": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714041378023,
+      "extendedProperties": {}
+    },
+    "INSIGHT.N2MhSCZ": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714041378020,
+      "extendedProperties": {}
+    },
+    "INSIGHT.ZDCVcJk": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714041378025,
+      "extendedProperties": {}
+    },
+    "INSIGHT.lkam8n8": {
+      "versionNumber": 0,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714041441696,
+      "extendedProperties": {}
+    },
+    "PROJECT.CREDITCARDFRAUDSIYU": {
+      "versionNumber": 8,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714051110869,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_TRANSACTIONS_joined": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714039261263,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_TRANSACTIONS_joined_prepared": {
+      "versionNumber": 3,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714040131521,
+      "extendedProperties": {}
+    },
+    "RECIPE.compute_TRANSACTIONS_stacked": {
+      "versionNumber": 1,
+      "lastModifiedBy": {
+        "login": "siyu.chen@ralphlauren.com"
+      },
+      "lastModifiedOn": 1714038925859,
+      "extendedProperties": {}
+    }
+  }
+}
