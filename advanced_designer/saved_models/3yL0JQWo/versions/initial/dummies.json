@@ -1,0 +1,63 @@
+{
+    "details": {
+        "merchant_subsector_description": {
+            "levels": [
+                "gas",
+                "luxury goods",
+                "consumer electronics",
+                "internet",
+                "insurance",
+                "gym",
+                "groceries",
+                "restaurant/dining",
+                "entertainment",
+                "carpentry",
+                "retail apparel",
+                "beauty & personal care",
+                "biotechnology",
+                "hotel",
+                "liquor",
+                "health care services",
+                "real estate investments",
+                "advertising services",
+                "semiconductors",
+                "tobacco",
+                "dental",
+                "flights",
+                "news & journalism",
+                "pharmaceuticals",
+                "misc entertainment",
+                "real estate services",
+                "magic cards",
+                "financial services",
+                "utilities",
+                "adult industry",
+                "professional photography",
+                "health care technology",
+                "office supplies",
+                "astrological services",
+                "education services",
+                "phone bill",
+                "automobiles",
+                "software"
+            ],
+            "with_others": true
+        },
+        "merchant_state": {
+            "levels": [
+                "New York",
+                "Massachusetts",
+                "New Hampshire",
+                "Pennsylvania",
+                "Connecticut",
+                "Maine",
+                "Vermont",
+                "Maryland",
+                "New Jersey",
+                "Delaware",
+                "Rhode Island"
+            ],
+            "with_others": true
+        }
+    }
+}

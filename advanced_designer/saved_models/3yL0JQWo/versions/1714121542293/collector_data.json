@@ -1,0 +1,386 @@
+{
+    "per_feature": {
+        "merchant_latitude": {
+            "stats": {}
+        },
+        "spending_type": {
+            "stats": {}
+        },
+        "authorized_flag_description": {
+            "stats": {}
+        },
+        "card_fico_score": {
+            "stats": {
+                "min": 300.0,
+                "average": 572.071496544125,
+                "median": 568.0,
+                "max": 850.0,
+                "p99": 845.0,
+                "std": 170.40795782588617
+            },
+            "missing_impute_with_value": 572.071496544125
+        },
+        "merchant_id": {
+            "stats": {}
+        },
+        "card_longitude": {
+            "stats": {}
+        },
+        "item_category": {
+            "stats": {}
+        },
+        "merchant_state_enName": {
+            "stats": {}
+        },
+        "card_state": {
+            "stats": {}
+        },
+        "card_state_enName": {
+            "stats": {}
+        },
+        "signature_provided": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.17409596313733347,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.37919435540628077
+            },
+            "missing_impute_with_value": 0.17409596313733347
+        },
+        "card_age": {
+            "stats": {
+                "min": 18.0,
+                "average": 45.04744315336071,
+                "median": 41.0,
+                "max": 100.0,
+                "p99": 97.0,
+                "std": 20.102957150414742
+            },
+            "missing_impute_with_value": 45.04744315336071
+        },
+        "transaction_id": {
+            "stats": {}
+        },
+        "card_first_active_month": {
+            "stats": {}
+        },
+        "card_latitude": {
+            "stats": {}
+        },
+        "merchant_location": {
+            "stats": {}
+        },
+        "merchant_category_id": {
+            "stats": {}
+        },
+        "card_id": {
+            "stats": {}
+        },
+        "merchant_subsector_description": {
+            "stats": {
+                "mostFrequentValue": "luxury goods",
+                "leastFrequentValue": "software"
+            },
+            "category_possible_values": [
+                "luxury goods",
+                "gas",
+                "consumer electronics",
+                "internet",
+                "insurance",
+                "gym",
+                "restaurant/dining",
+                "groceries",
+                "entertainment",
+                "carpentry",
+                "retail apparel",
+                "beauty & personal care",
+                "biotechnology",
+                "hotel",
+                "health care services",
+                "liquor",
+                "advertising services",
+                "real estate investments",
+                "semiconductors",
+                "tobacco",
+                "dental",
+                "flights",
+                "pharmaceuticals",
+                "news & journalism",
+                "misc entertainment",
+                "real estate services",
+                "magic cards",
+                "financial services",
+                "utilities",
+                "astrological services",
+                "health care technology",
+                "office supplies",
+                "phone bill",
+                "adult industry",
+                "education services",
+                "professional photography",
+                "automobiles",
+                "software"
+            ],
+            "category_possible_counts": [
+                13093,
+                12968,
+                12515,
+                11595,
+                8671,
+                4242,
+                3086,
+                3080,
+                2781,
+                1310,
+                923,
+                876,
+                477,
+                430,
+                405,
+                352,
+                285,
+                279,
+                261,
+                243,
+                218,
+                194,
+                144,
+                139,
+                94,
+                91,
+                81,
+                69,
+                28,
+                25,
+                25,
+                25,
+                21,
+                21,
+                17,
+                16,
+                10,
+                8
+            ]
+        },
+        "merchant_longitude": {
+            "stats": {}
+        },
+        "card_location": {
+            "stats": {}
+        },
+        "purchase_amount": {
+            "stats": {
+                "min": -259.26,
+                "average": 246.75357407589854,
+                "median": 89.47,
+                "max": 48390.0,
+                "p99": 1914.645599999968,
+                "std": 732.1637661658531
+            },
+            "missing_impute_with_value": 246.75357407589854
+        },
+        "card_reward_program": {
+            "stats": {}
+        },
+        "merchant_state": {
+            "stats": {
+                "mostFrequentValue": "New York",
+                "leastFrequentValue": "Rhode Island"
+            },
+            "category_possible_values": [
+                "New York",
+                "Massachusetts",
+                "New Hampshire",
+                "Pennsylvania",
+                "Connecticut",
+                "Maine",
+                "Vermont",
+                "Maryland",
+                "New Jersey",
+                "Delaware",
+                "Rhode Island"
+            ],
+            "category_possible_counts": [
+                23506,
+                17180,
+                12991,
+                12161,
+                11203,
+                1059,
+                551,
+                261,
+                101,
+                45,
+                40
+            ]
+        },
+        "risk": {
+            "stats": {}
+        },
+        "purchase_date": {
+            "stats": {}
+        },
+        "authorized_flag": {
+            "stats": {}
+        },
+        "purchase_date_parsed": {
+            "stats": {}
+        },
+        "purchase_date_dow": {
+            "stats": {}
+        },
+        "purchase_date_parsed_day": {
+            "stats": {}
+        },
+        "purchase_date_parsed_month": {
+            "stats": {}
+        },
+        "card_first_active_month_parsed": {
+            "stats": {}
+        },
+        "days_active": {
+            "stats": {}
+        },
+        "distance_card_merchant": {
+            "stats": {}
+        },
+        "purchase_weekend": {
+            "stats": {}
+        },
+        "purchase_amount_min": {
+            "stats": {
+                "min": -314.31,
+                "average": 93.52647463187283,
+                "median": 27.98,
+                "max": 28850.75,
+                "p99": 1052.5345999999972,
+                "std": 358.9624964979697
+            },
+            "missing_impute_with_value": 93.52647463187283
+        },
+        "purchase_amount_max": {
+            "stats": {
+                "min": -251.9,
+                "average": 627.5032642992829,
+                "median": 352.7,
+                "max": 48390.0,
+                "p99": 4757.530499999918,
+                "std": 1356.15948628015
+            },
+            "missing_impute_with_value": 627.5032642992829
+        },
+        "purchase_amount_avg": {
+            "stats": {
+                "min": -251.9,
+                "average": 238.94622248099284,
+                "median": 155.54816666666665,
+                "max": 28850.75,
+                "p99": 1523.427999999998,
+                "std": 452.87380266362584
+            },
+            "missing_impute_with_value": 238.94622248099284
+        },
+        "purchase_amount_sum": {
+            "stats": {
+                "min": -251.9,
+                "average": 1532.501183511981,
+                "median": 744.74,
+                "max": 117729.00999999998,
+                "p99": 10934.84559999995,
+                "std": 3158.391532048111
+            },
+            "missing_impute_with_value": 1532.501183511981
+        },
+        "w2_purchase_amount_min": {
+            "stats": {
+                "min": -314.31,
+                "average": 100.16904099469375,
+                "median": 23.29,
+                "max": 48390.0,
+                "p99": 1122.9325999999953,
+                "std": 516.611088236606
+            },
+            "missing_impute_with_value": 100.16904099469375
+        },
+        "w2_purchase_amount_max": {
+            "stats": {
+                "min": -176.07,
+                "average": 1312.4230371631645,
+                "median": 329.96,
+                "max": 48390.0,
+                "p99": 12680.47,
+                "std": 2902.10901593794
+            },
+            "missing_impute_with_value": 1312.4230371631645
+        },
+        "w2_purchase_amount_avg": {
+            "stats": {
+                "min": -176.07,
+                "average": 241.32479644623695,
+                "median": 140.11,
+                "max": 48390.0,
+                "p99": 1502.3859199999963,
+                "std": 584.3961298165303
+            },
+            "missing_impute_with_value": 241.32479644623695
+        },
+        "w2_purchase_amount_sum": {
+            "stats": {
+                "min": -176.07,
+                "average": 72743.89127241174,
+                "median": 894.69,
+                "max": 2433943.7600000156,
+                "p99": 1933144.9192000013,
+                "std": 309325.0621618723
+            },
+            "missing_impute_with_value": 72743.89127241174
+        }
+    },
+    "feature_order": [
+        "merchant_latitude",
+        "spending_type",
+        "authorized_flag_description",
+        "card_fico_score",
+        "merchant_id",
+        "card_longitude",
+        "item_category",
+        "merchant_state_enName",
+        "card_state",
+        "card_state_enName",
+        "signature_provided",
+        "card_age",
+        "transaction_id",
+        "card_first_active_month",
+        "card_latitude",
+        "merchant_location",
+        "merchant_category_id",
+        "card_id",
+        "merchant_subsector_description",
+        "merchant_longitude",
+        "card_location",
+        "purchase_amount",
+        "card_reward_program",
+        "merchant_state",
+        "risk",
+        "purchase_date",
+        "authorized_flag",
+        "purchase_date_parsed",
+        "purchase_date_dow",
+        "purchase_date_parsed_day",
+        "purchase_date_parsed_month",
+        "card_first_active_month_parsed",
+        "days_active",
+        "distance_card_merchant",
+        "purchase_weekend",
+        "purchase_amount_min",
+        "purchase_amount_max",
+        "purchase_amount_avg",
+        "purchase_amount_sum",
+        "w2_purchase_amount_min",
+        "w2_purchase_amount_max",
+        "w2_purchase_amount_avg",
+        "w2_purchase_amount_sum"
+    ]
+}

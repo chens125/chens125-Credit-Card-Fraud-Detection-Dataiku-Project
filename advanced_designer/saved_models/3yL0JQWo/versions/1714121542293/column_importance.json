@@ -1,0 +1,34 @@
+{
+    "columns": [
+        "card_fico_score",
+        "signature_provided",
+        "card_age",
+        "merchant_subsector_description",
+        "purchase_amount",
+        "merchant_state",
+        "purchase_amount_min",
+        "purchase_amount_max",
+        "purchase_amount_avg",
+        "purchase_amount_sum",
+        "w2_purchase_amount_min",
+        "w2_purchase_amount_max",
+        "w2_purchase_amount_avg",
+        "w2_purchase_amount_sum"
+    ],
+    "importances": [
+        0.05039402482768085,
+        0.09593617544109541,
+        0.07859194781538051,
+        0.4583798547916455,
+        0.053286922340357035,
+        0.0192803072221549,
+        0.03178439310598899,
+        0.012117467712974866,
+        0.01712101359604586,
+        0.024633804752164146,
+        0.04262829525412539,
+        0.022283409269895426,
+        0.046774396474114195,
+        0.04678798739637685
+    ]
+}
